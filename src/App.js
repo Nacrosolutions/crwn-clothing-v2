@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './catagories.scss';
+import Authentication from './routes/authenticate/authenticate';
 //import Catagories from './components/directory/catagories';
 import Home from './routes/home/home';
 import Naviagtion from './routes/navigation/navigation';
-import SignIn from './routes/signin/signIn';
 
 
 const Shop = () => {
@@ -23,7 +23,7 @@ const App = () => {
 
         <Route index element={<Home />} />
         <Route path='shop' element={<Shop />} />
-        <Route path='sign-in' element={<SignIn />} />
+        <Route path='auth' element={<Authentication />} />
 
       </Route>
 
